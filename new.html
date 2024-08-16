@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>杨成龙</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        background-color: #d1cfcd;
+        height: 100vh;
+    }
+
+    /* * {
+        border: 1px solid black;
+    } */
+
+    .flex {
+        display: flex;
+    }
+
+    .flex1 {
+        flex: 1;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    .Baise {
+        background-color: #faf9f7;
+    }
+
+    .mg8 {
+        margin: 8px;
+    }
+
+    .mgr8 {
+        margin-right: 8px;
+    }
+
+    .mgt8 {
+        margin-top: 8px;
+    }
+
+    .yinying {
+        box-shadow: 3px 3px 3px #888888;
+    }
+
+    .daohang {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(150, 146, 146);
+        font-size: 17px;
+        color: #050505;
+    }
+
+    @media(max-width:600px) {
+        .cebian {
+            display: none;
+        }
+
+        .neirong {
+            flex-direction: column;
+        }
+
+        .shuxiang {
+            flex-direction: column;
+        }
+
+        .youqu {
+            margin-left: 8px;
+        }
+
+        .shuju {
+            margin: 0 0 8px;
+            flex: auto;
+        }
+    }
+</style>
+
+<body class="flex">
+    <!--侧边栏-->
+    <div style="width:200px; z-index: 2" class=" cebian Baise yinying">
+        <!--头像栏-->
+        <div style="padding:10px;
+                    align-items:center;
+                    justify-content:center;
+                    border-bottom: 1px solid #d1cfcd;" class="flex">
+            <img src="logo1.jpg" width="40px" height="40px" alt="">
+            <div class="mg8">杨成龙</div>
+        </div>
+        <!--导航栏-->
+        <div class="flex1">
+            <div class="daohang">导航 : <a href="https://www.w3school.com.cn/" traget="_blank">html资源</a></div>
+            <div class="daohang">导航 :<a
+                    href="https://www.bilibili.com/video/BV1eF411x7g5/?spm_id_from=333.788&vd_source=6ed1f726fcad8a9ce70a63ae99caa803"
+                    traget="_blank">导师</a></div>
+            <div class="daohang">导航</div>
+            <div class="daohang">导航</div>
+        </div>
+    </div>
+    <!--主区域-->
+    <div class="column flex flex1">
+        <!--头部栏-->
+        <div style="height:60px; z-index: 1" class="Baise yinying"></div>
+        <!--内容区-->
+        <div style="overflow:auto;" class="flex1 flex shuxiang">
+
+            <!--左区-->
+            <div style="flex:3;" class="flex column mg8">
+                <!--数据区-->
+                <div class="flex shuxiang">
+                    <!--数据块-->
+                    <div style="height:100px" class="shuju flex1 Baise mgr8 yinying"></div>
+                    <div style="height:100px" class="shuju flex1 Baise mgr8 yinying"></div>
+                    <div style="height:100px" class="shuju flex1 Baise mgr8 yinying"></div>
+                    <div style="height:100px" class="shuju flex1 Baise yinying"></div>
+                </div>
+                <!--列表区-->
+                <div class="flex column">
+                    <!--列表项-->
+                    <div style="height:160px" class="Baise mgt8 yinying"></div>
+                    <div style="height:160px" class="Baise mgt8 yinying"></div>
+                    <div style="height:160px" class="Baise mgt8 yinying"></div>
+                    <div style="height:160px" class="Baise mgt8 yinying"></div>
+                    <div style="height:160px" class="Baise mgt8 yinying"></div>
+                    <div style="height:160px" class="Baise mgt8 yinying"></div>
+                </div>
+            </div>
+            <!--右区-->
+            <div style="flex:1;" class="youqu mgr8 mgt8">
+                <!--提示区-->
+                <div style="height:150px" class="Baise yinying"></div>
+                <!--消息区-->
+                <div style="height:300px" class="Baise mgt8 yinying"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
